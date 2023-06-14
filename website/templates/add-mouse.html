@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+
+  <div class="register-page">
+    <div></div>
+    <div class="register-div">
+      <h1>Add a mouse</h1>
+      <form method="POST">
+        <label>Mouse name</label>
+        <input id="mouseName" name="mouseName" class="mouseName" type="text" placeholder="Enter mouse name">
+        <label>Image</label>
+        <input id="mouseImg" name="mouseImg" class="mouseImg" type="text" placeholder="Copy image url here">
+        <label>Category</label>
+        <input id="mouseCat" name="mouseCat" class="mouseCat" type="text" placeholder="Enter category">
+        <label>Sub category</label>
+        <input id="mouseSubcat" name="mouseSubCat" class="mouseSubCat" type="text" placeholder="Enter sub category">
+        <label>Power type</label>
+        <input id="powerType" name="powerType" class="powerType" type="text" placeholder="Enter power type">
+        <button class="addmouse-button" name="addmouse-button">Submit</button>
+      </form>
+    </div>
+    <div></div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+  <div class="heading">
+    <h1>Home</h1>
+  </div>
+  <div class="home-desc">
+    <h2>MouseHunt Catalogue</h2>
+    <div>
+      <img class="mousehunt-logo" src="https://upload.wikimedia.org/wikipedia/en/e/ed/MouseHunt_Logo.jpg">
+    </div>
+    Created this as a project for CS50x. Feel free to explore the website.
+  </div>
+  <div class="table-menu">
+    <div></div>
+    <div class="areas">
+      <table>
+        <form method="GET">
+          <tr>
+            <button name="seasonal"><a href="/seasonal">Seasonal Soldiers</a></button>
+          </tr>
+          <tr>
+            <button name="floating"><a href="/floating">Floating Islanders</a></button>
+          </tr>
+          <tr>
+            <button name="foreword"><a href="/foreword">Foreword Farmers</a></button>
+          </tr>
+          <tr>
+            <button name="prologue" type="submit"><a href="/prologue">Prologue Pond Prowlers</a></button>
+          </tr>
+          <tr>
+            <button name="storytellers"><a href="/storytellers">Storytellers</a></button>
+          </tr>
+          
+          <tr>
+
+          </tr>
+          <tr>
+
+          </tr>
+          <tr>
+
+          </tr>
+        </form>
+      </table>
+    </div>
+    <div></div>
+  </div>
+  <footer>
+    <div class="footer-left"></div>
+    <div class="footer-right">
+      Done by Daryl Chen (Singapore) 10 - 12 June 2023<br>
+      Credit:<br>
+      <a href="https://www.mousehuntgame.com/camp.php" target="_blank">MouseHunt</a><br>
+      <a href="https://cs50.harvard.edu/x/2023/weeks/9/" target="_blank">CS50 Week 8 & 9</a><br>
+      <a href="https://www.youtube.com/watch?v=dam0GPOAvVI&ab_channel=TechWithTim" target="_blank">Tech With Tim</a>
+    </div>
+  </footer>
+
+{% endblock %}

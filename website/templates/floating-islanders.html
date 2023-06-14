@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+
+{% block title %}MouseHunt Catalogue{% endblock %}
+
+{% block body %}
+
+  <div class="heading">
+    <h1>Mouse Catalogue</h1>
+  </div>
+  <div class="mouse-group">
+    <h2>Floating Islanders</h2>
+    High above the tallest mountain peaks, you'll find these light-hearted islanders basking in the sun. They lead a thrilling life of cloud chasing, island hopping, and high-altitude treasure hunting.
+  </div>
+  <div class="catalogue">
+    <div class="left"></div>
+    <div class="gallery">
+      <div class="launch-pad">
+        <h2>Launch Pad</h2>
+        <div class="indiv-mouse" id="indiv-mouse">
+          <img id="mouse-img" src="https://www.mousehuntgame.com/images/mice/large/9d913883a317d3d8ce97209c3e66b9f7.jpg?cv=2" alt="skydiver" onmouseover="mouseDesc()" onmouseout="mouseBack()">
+          <div class="mouse-name" style="display: none;" id="mouse-name">Skydiver</div>
+        </div>
+        <img src="https://www.mousehuntgame.com/images/mice/large/e7803ede816c4fb99eb09f847f05a8f8.jpg?cv=2" alt="sky-greaser">
+        <img src="https://www.mousehuntgame.com/images/mice/large/352b8dfcc5e94b66d48dbee0be34454b.jpg?cv=2" alt="launchpad-labourer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/eacfbf2f69ff054f82ed774242fa832d.jpg?cv=2" alt="cloud-miner">
+      </div>
+      <div class="cloud-commoner">
+        <h2>Cloud Commoner</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/9028c5d7d2e9b8e3c9dc3aba93c57c43.jpg?cv=2" alt="daydreamer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/e7b09d9c6c3178970d71f2285a9821f0.jpg?cv=2" alt="kite-flyer">
+        </div>
+      <div class="physical-pummeler">
+        <h2>Physical Pummeler</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/774e7444b96772f615f12e633897ec8a.jpg?cv=2" alt="ground-gavaleer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/60413ceb81cd1779baed1b0740c3d7a5.jpg?cv=2" alt="sky-swordsman">
+        <img src="https://www.mousehuntgame.com/images/mice/large/efad1eb9097cdcd51c8f884ef6dfc26d.jpg?cv=2" alt="herc">
+        <img src="https://www.mousehuntgame.com/images/mice/large/29f003d88246c54d62b597a96651c040.jpg?cv=2" alt="sky-squire">
+      </div>
+      <div class="shadow-overcaster">
+          <h2>Shadow Overcaster</h2>
+          <img src="https://www.mousehuntgame.com/images/mice/large/3b24a05eb747058e2c1df5956c5afaff.jpg?cv=2" alt="astrological-astronomer">
+          <img src="https://www.mousehuntgame.com/images/mice/large/f4c1edcd75c558deeebeb636dd3bdeb4.jpg?cv=2" alt="overcaster">
+          <img src="https://www.mousehuntgame.com/images/mice/large/7a9ddd0e5bfe7a14bcf986f358cf4127.jpg?cv=2" alt="stratocaster">
+          <img src="https://www.mousehuntgame.com/images/mice/large/419298181554ceab4dc372404369f25c.jpg?cv=2" alt="shadow-sage">
+      </div>
+      <div class="tactical-dog-fighter">
+        <h2>Tactical Dog Fighter</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/7e835d4bacb2c0890cdae6b71d8b78bf.jpg?cv=2" alt="worried-wayfinder">
+        <img src="https://www.mousehuntgame.com/images/mice/large/92891b97577cf7372cfb5a3da7997dc7.jpg?cv=2" alt="gyrologer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/6430bbe1eb0641b2d4b2d569674c2f43.jpg?cv=2" alt="seasoned-islandographer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/eb55c8d8cc0c41be91aeee8b7a5ddab8.jpg?cv=2" alt="captain-cloudkicker">
+      </div>
+      <div class="atmospheric-arcane">
+        <h2>Atmospheric Arcane</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/6e190fc09d171c6d6c7ea012bf0c7486.jpg?cv=2" alt="sky-glass-sorcerer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/365584180bb11f76c68b04c0d97f4bad.jpg?cv=2" alt="sky-glass-glazier">
+        <img src="https://www.mousehuntgame.com/images/mice/large/906ca38cf87444300be6ddaac86ef83b.jpg?cv=2" alt="sky-dancer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/765b0f4602026ebc7133bdc48e63718e.jpg?cv=2" alt="sky-highborne">
+
+      </div>
+      <div class="floating-forgotten">
+        <h2>Floating Forgotten</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/1898a9f5f9c8901e5ae5f8a7601e7d0e.jpg?cv=2" alt="spry-sky-explorer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/e3fd9f1eedad8695969e1a72856e3496.jpg?cv=2" alt="spry-sky-seer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/a8c672a58eb319a21395a37437e7fc71.jpg?cv=2" alt="cumulost">
+        <img src="https://www.mousehuntgame.com/images/mice/large/8665bc624c22ecf604cc63b86e559481.jpg?cv=2" alt="spheric-diviner">
+      </div>
+      <div class="hovering-hydro">
+        <h2>Hovering Hydro</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/2615b50ca8fa8652088df539cb2a4eba.jpg?cv=2" alt="nimbomancer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/ca9694eb6d1a476e3da4d80cfc906a85.jpg?cv=2" alt="sky-surfacer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/7adfc8121bc65d2e086d05114bbd2cac.jpg?cv=2" alt="cute-cloud-conjurer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/a039b9115b7dba1e86f02065ff0aa57f.jpg?cv=2" alt="mist-maker">
+      </div>
+      <div class="dashing-dragon">
+        <h2>Dashing Dragon</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/8ebfd1849210f6f60ecdc5df2ab24503.jpg?cv=2" alt="tiny-dragonfly">
+        <img src="https://www.mousehuntgame.com/images/mice/large/efda8ba56e26dadd7772da835633b83b.jpg?cv=2" alt="lancer-guard">
+        <img src="https://www.mousehuntgame.com/images/mice/large/592c84afcf33c99dac525dfbd3226e67.jpg?cv=2" alt="dragonbreather">
+        <img src="https://www.mousehuntgame.com/images/mice/large/7c59ca52624d99a62a340199b072d5f9.jpg?cv=2" alt="regla-spearman">
+      </div>
+      <div class="lofty-lawbreaker">
+        <h2>Lofty Lawbreaker</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/e492e56cea75e19a62f7e44d9893ea1a.jpg?cv=2" alt="devious-gentleman">
+        <img src="https://www.mousehuntgame.com/images/mice/large/4954ac90aa6cc4918f4a2de443e0ad32.jpg?cv=2" alt="stack-of-thieves">
+        <img src="https://www.mousehuntgame.com/images/mice/large/6645c44e0e91f577b78deba38e4463fe.jpg?cv=2" alt="lawbender">
+        <img src="https://www.mousehuntgame.com/images/mice/large/62a75bf8f9c641fceb2fe576b26d7ae4.jpg?cv=2" alt="agent-m">
+      </div>
+      <div class="sky-pirate">
+        <h2>Sky Pirate</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/6174f61820bc92707a4ea7a77be826a0.jpg?cv=2" alt="suave-pirate">
+        <img src="https://www.mousehuntgame.com/images/mice/large/3c3a1ac9d5a5bd4e11edacd5eb8f9098.jpg?cv=2" alt="cutthroat-pirate">
+        <img src="https://www.mousehuntgame.com/images/mice/large/e75300d65937ad2a5048bcb8f1fca96d.jpg?cv=2" alt="cutthroat-cannoneer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/05583f7b7722bee907ee88a12bc25063.jpg?cv=2" alt="scarlet-revenger">
+        <img src="https://www.mousehuntgame.com/images/mice/large/b26e9532573465154539b54265d1bd52.jpg?cv=2" alt="mairitime-pirate">
+        <img src="https://www.mousehuntgame.com/images/mice/large/68ab104f9b65619fd103afda1893b8c5.jpg?cv=2" alt="admiral-cloudbread">
+        <img src="https://www.mousehuntgame.com/images/mice/large/33337415d66accf46ef5a8126b26a05e.jpg?cv=2" alt="peggy-the-plunderer">
+      </div>
+      <div class="sky-warden">
+        <h2>Sky Warden</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/9ddf77f3fad0c33583260539ef82d704.jpg?cv=2" alt="warden-of-rain">
+        <img src="https://www.mousehuntgame.com/images/mice/large/322c8bf2cddda0872aee39375d289633.jpg?cv=2" alt="warden-of-fog">
+        <img src="https://www.mousehuntgame.com/images/mice/large/dcda03d53101c0d278a3ef492637576b.jpg?cv=2" alt="warden-of-frost">
+        <img src="https://www.mousehuntgame.com/images/mice/large/6d28ed16ca2b616d101b0eec31d5bc8b.jpg?cv=2" alt="warden-of-wind">
+      </div>
+      <div class="sky-paragon">
+        <h2>Sky Paragon</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/b282a9644f51f7c9c96f363810eed01a.jpg?cv=2" alt="paragon-of-strength">
+        <img src="https://www.mousehuntgame.com/images/mice/large/e1056eaa49d781baccd0ccb0ae76a3a3.jpg?cv=2" alt="paragon-of-shadow">
+        <img src="https://www.mousehuntgame.com/images/mice/large/23f87e78243232a2f51b3dcc6ef6d6e9.jpg?cv=2" alt="paragon-of-tactics">
+        <img src="https://www.mousehuntgame.com/images/mice/large/365631de10adf7cfd664b6b6d78a804c.jpg?cv=2" alt="paragon-of-arcane">
+        <img src="https://www.mousehuntgame.com/images/mice/large/f68582fd821225f962900bead1c1c4e5.jpg?cv=2" alt="paragon-of-forgotten">
+        <img src="https://www.mousehuntgame.com/images/mice/large/3934d224ac84034aa5b8b20872dd8d2d.jpg?cv=2" alt="paragon-of-water">
+        <img src="https://www.mousehuntgame.com/images/mice/large/9da8a4a19cae47f85c5397d570640798.jpg?cv=2" alt="paragon-of-dragons">
+        <img src="https://www.mousehuntgame.com/images/mice/large/5e9a92a956f353094826aec0c262cba8.jpg?cv=2" alt="paragon-of-the-lawless">
+      </div>
+      <div class="palace-protectors">
+        <h2>Palace Protectors</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/2d3415196767084a9b12a12a8ae22ded.jpg?cv=2" alt="glamorous-gladiator">
+        <img src="https://www.mousehuntgame.com/images/mice/large/8acd68b3df5d53651bf93cdddfb66542.jpg?cv=2" alt="zealous-academic">
+        <img src="https://www.mousehuntgame.com/images/mice/large/3049c798643cc05c05c290ed45064a42.jpg?cv=2" alt="rocketeer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/2836affa543c1316a74b1e605664d11d.jpg?cv=2" alt="sky-glider">
+        <img src="https://www.mousehuntgame.com/images/mice/large/d9de8618f9910afdb73b0d8b8eb049e2.jpg?cv=2" alt="forgotten-elder">
+        <img src="https://www.mousehuntgame.com/images/mice/large/50c2386e43fb6fd4a573703eb947875f.jpg?cv=2" alt="cloud-strider">
+        <img src="https://www.mousehuntgame.com/images/mice/large/39df9964b600a2773945495d86b6e82e.jpg?cv=2" alt="empyrean-javelineer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/a77deaa02ea4940f0243f065e7219189.jpg?cv=2" alt="aristo-cat-burglar">
+      </div>
+      <div class="the-richest">
+        <h2>The Richest</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/d7a6b381cc24ee0a537a9d88c93b51a6.jpg?cv=2" alt="richard-the-rich">
+        <img src="https://www.mousehuntgame.com/images/mice/large/b9186fda27ef5cef30ab9496d0326388.jpg?cv=2" alt="fortuitous-fool">
+      </div>
+      <div class="empyrean-guard">
+        <h2>Empyrean Guard</h2>
+        <img src="https://www.mousehuntgame.com/images/mice/large/0063c50c398ba3f6a09dd43d4a809b4d.jpg?cv=2" alt="empyrean-appraiser">
+        <img src="https://www.mousehuntgame.com/images/mice/large/51674b15c6cdf61ee65fcbfd6259ab9b.jpg?cv=2" alt="consumed-charm-tinkerer">
+        <img src="https://www.mousehuntgame.com/images/mice/large/becf03bb1a71860a89cf983107b2588f.jpg?cv=2" alt="empyrean-geologist">
+        <img src="https://www.mousehuntgame.com/images/mice/large/a03d4adbfd4314ad27a1b47f519f213c.jpg?cv=2" alt="empyrean-empress">
+      </div>
+    </div>
+    <div class="right"></div>
+  </div>
+
+{% endblock %}

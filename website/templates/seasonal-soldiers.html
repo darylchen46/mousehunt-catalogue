@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block title %}MouseHunt Catalogue{% endblock %}
+
+{% block body %}
+
+  <div class="heading">
+    <h1>Mouse Catalogue</h1>
+  </div>
+  <div class="mouse-group">
+    <h2>Prologue Pond Prowlers</h2>
+    This is not your typical fishing trip! These fresh water aquatic antagonists have a unique appetite for various types of clever but peculiar cheeses crafted from the items found in their pond. Make sure to load your boat with a hefty Hydro trap if you plan to venture out onto this precarious pond!
+  </div>
+  <div class="gallery">
+    <div class="spring">
+      <h2>Spring</h2>
+      
+      {% for mouse in mousedb %}
+        {% if mouse.mouseSubCat == "Spring" %}
+          <div class="mouse-container" id="indiv-mouse">
+            <img class="mouse-img" id="mouse-img" src="{{ mouse.mouseImg }}" alt="mythweaver">
+            <a href="/{{ mouse.mouseName }}">
+              <div class="mouse-name" id="mouse-name">
+                {{ mouse.mouseName }}<br>
+                <img class="power-type" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png">
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+    <div class="summer">
+      <h2>Summer</h2>
+
+      {% for mouse in mousedb %}
+        {% if mouse.mouseSubCat == "Summer" %}
+          <div class="mouse-container" id="indiv-mouse">
+            <img class="mouse-img" id="mouse-img" src="{{ mouse.mouseImg }}" alt="mythweaver">
+            <a href="/mythweaver">
+              <div class="mouse-name" id="mouse-name">
+                {{ mouse.mouseName }}<br>
+                <img class="power-type" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png">
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      </div>
+    <div class="fall">
+      <h2>Fall</h2>
+
+      {% for mouse in mousedb %}
+        {% if mouse.mouseSubCat == "Fall" %}
+          <div class="mouse-container" id="indiv-mouse">
+            <img class="mouse-img" id="mouse-img" src="{{ mouse.mouseImg }}" alt="mythweaver">
+            <a href="/mythweaver">
+              <div class="mouse-name" id="mouse-name">
+                {{ mouse.mouseName }}<br>
+                <img class="power-type" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png">
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+    <div class="fall">
+      <h2>Winter</h2>
+
+      {% for mouse in mousedb %}
+        {% if mouse.mouseSubCat == "Winter" %}
+          <div class="mouse-container" id="indiv-mouse">
+            <img class="mouse-img" id="mouse-img" src="{{ mouse.mouseImg }}" alt="mythweaver">
+            <a href="/mythweaver">
+              <div class="mouse-name" id="mouse-name">
+                {{ mouse.mouseName }}<br>
+                <img class="power-type" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png">
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+
+{% endblock %}

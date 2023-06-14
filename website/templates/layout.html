@@ -1,0 +1,156 @@
+<!DOCtype html>
+<html>
+  <head>
+
+    <!-- To allow viewing on other devices -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-sclae=1" />
+    
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="/static/layout.css">
+    <link rel="stylesheet" href="/static/nav.css">
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/mouse.css">
+    <link rel="stylesheet" href="/static/add-mouse.css">
+
+    <!-- Link to Javascript -->
+    <script src="/static/layout.js"></script>
+
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>{% block title %}Home{% endblock %}</title>
+
+    <!-- Page icon -->
+    <link rel="icon" type="x-icon" href="https://www.mousehuntgame.com/images/items/skins/trap_small/97a8fff44c94bf3698cf595176d0a020.png?cv=2">
+
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="bar">
+      {% if user.is_authenticated %}
+        <div class="menu">
+          <button class="sidebar-menu" onclick="openSidebar()" id="burger">
+            <img src="https://www.svgrepo.com/show/506800/burger-menu.svg" alt="hamburger">
+          </button>
+        </div>
+        <div class="mousehunt-icon">
+          <a href="/"><img src="https://upload.wikimedia.org/wikipedia/en/e/ed/MouseHunt_Logo.jpg" alt="mousehunt-logo"></a>
+        </div>
+        <div class="second">
+          <form class="search-bar">
+            <input class="enter" type="text" name="enter" placeholder="Search">
+            <input class="submit" type="submit" name="submit">
+          </form>
+        </div>
+      <div class="others">
+        <div class="logged-in-user">
+          Logged in as {{ loggeduser }}
+        </div>
+        <form class="logout">
+          <button name="logout"><a href="/logout">Logout</a></button>
+        </form>
+      </div>
+      {% else %}
+      <div></div>
+      <div class="others2">
+        <form class="login">
+            <button name="login"><a href="/login">Login</a></button>
+        </form>
+        <form class="register">
+            <button name="login"><a href="/register">Register</a></button>
+        </form>
+      </div>
+      {% endif %}
+    </nav>
+    
+    <!-- Alert messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+      {% if category == 'error' %}
+      <div class="alert" role="alert" id="alert">
+        <div class="alert-message">
+          {{ message }}
+        </div>
+        <div class="close-alert">
+          <button type="button" class="error-close" data-dismiss="alert" onclick="removeFlash()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      {% else %}
+      <div class="success" role="alert" id="alert">
+        <div class="alert-message">
+          {{ message }}
+        </div>
+        <div class="close-alert">
+          <button type="button" class="success-close" data-dismiss="alert" onclick="removeFlash()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% endwith %}
+    
+    <!-- Background block -->
+    <div class="background-block" id="background-block">
+      <button onclick="closeSidebar()" class="background-block-button"></button>
+    </div>
+
+    <!-- Side bar -->
+    <div class="sidebar" id="sidebar">
+      <button class="sidebar-menu-close" onclick="closeSidebar()">
+        <img src="https://www.svgrepo.com/show/506800/burger-menu.svg" alt="hamburger">
+      </button>
+      <div class="sidebar-table-menu">
+        <div></div>
+        <div class="sidebar-areas">
+          <table>
+            <form method="GET">
+              <tr>
+                <button name="add-mouse"><a href="/add-mouse">Add a mouse</a></button>
+              </tr>
+            </form>
+          </table>
+          <table>
+            <form method="GET">
+              <tr>
+                <button name="seasonal"><a href="/seasonal">Seasonal Soldiers</a></button>
+              </tr>
+              <tr>
+                <button name="floating"><a href="/floating">Floating Islanders</a></button>
+              </tr>
+              <tr>
+                <button name="foreword"><a href="/foreword">Foreword Farmers</a></button>
+              </tr>
+              <tr>
+                <button name="prologue" type="submit"><a href="/prologue">Prologue Pond Prowlers</a></button>
+              </tr>
+              <tr>
+                <button name="storytellers"><a href="/storytellers">Storytellers</a></button>
+              </tr>
+              
+              <tr>
+    
+              </tr>
+              <tr>
+    
+              </tr>
+              <tr>
+    
+              </tr>
+            </form>
+          </table>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    {% block body %}{% endblock %}
+  </body>
+</html>

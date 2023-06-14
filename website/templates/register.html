@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+
+  <div class="register-page">
+    <div></div>
+    <div class="register-div">
+      <h1>Register</h1>
+      <form method="POST">
+        <label>Username</label>
+        <input d="username" name="username" class="username" type="text" placeholder="Enter username">
+        <label>Password</label>
+        <input id="password" name="password" class="password" type="password" placeholder="Enter password">
+        <label>Confirm Password</label>
+        <input id="cpassword" name="cpassword" class="cpassword" type="password" placeholder="Confirm Password">
+        <button class="register-button" name="register-button">Register</button>
+      </form>
+    </div>
+    <div></div>
+  </div>
+
+{% endblock %}

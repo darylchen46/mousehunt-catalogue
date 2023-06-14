@@ -1,0 +1,50 @@
+.mouse-group,
+.home-desc
+{
+    text-align: center;
+}
+
+.mousehunt-logo
+{
+    height: 200px;
+}
+
+.table-menu
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.areas 
+{
+    width: 300px;
+    display: inline-block;
+    border-style: solid;
+}
+
+.areas button
+{
+    display: block;
+    background-color: rgb(247, 231, 234);
+    font-family: roboto;
+    font-size: 15px;
+    width: 300px;
+    border: none;
+    padding: 5px;
+}
+
+.areas button:hover
+{
+    opacity: 60%;
+}
+
+footer
+{
+    background-color: rgb(247, 231, 234);
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,33 @@
+.mouseName,
+.mouseImg,
+.mouseCat,
+.mouseSubCat,
+.powerType
+{
+    display: block;
+    height: 35px;
+    width: 1000px;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(122, 122, 122);
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.addmouse-button
+{
+    height: 30px;
+    width: 70px;
+    background-color: rgb(247, 231, 234);
+    font-family: roboto;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+
+.addmouse-button:hover
+{
+    opacity: 60%;
+    cursor: pointer;
+}

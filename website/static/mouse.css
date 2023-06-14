@@ -1,0 +1,17 @@
+.mouse
+{
+    border-style: solid;
+    border-width: 1px;
+}
+
+.mouse-box
+{
+    margin: 40px;
+    display: flex;
+}
+
+.mouse-desc
+{
+    flex: 1;
+    display: inline-block;
+}
